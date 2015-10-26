@@ -1,0 +1,269 @@
+body { cursor:crosshair;
+	   
+	}
+
+
+	
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/*packing begins*/
+.packery {
+  background: white;
+}
+
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+/* Responsible for sizing*/
+.item,
+.grid-sizer {
+  width: 100%; 
+}
+
+.item {
+  height: *;
+  float: left;
+  background: none;
+  border: none;
+  border-color: hsla(0, 0%, 0%, 0.3);
+}
+
+/*packing ends*/
+a  { text-decoration: none;
+    }
+/*makes screen wider*/
+.WhiteBox {
+  width: 3000px;
+  height: 1900px;
+    top: 20px;
+  left: 20px;
+}
+
+
+/*fadedbuttonclick*/
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 15;
+  padding: 0px;
+  background-color: rgba(255,255,255,.9);
+  overflow: hidden;
+}
+/*makes screen wider ends */
+
+.descriptbox {
+  width: 550px;
+  height: 300px;
+  color:#C4C4C4;
+  border: 6px solid #C4C4C4;
+  display: block;
+  background-color: rgba(255,255,255,.8);
+  position: absolute;
+  left: 30%;
+  margin:  auto;
+  top:25%;
+  z-index: 16;
+
+}
+
+h1 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.8em }
+h2 { font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: .9em }
+
+.para {
+
+  width: 450px;
+  color:#C4C4C4;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  display: block;
+  position: relative;
+  top:30px;
+  left:50px;
+  right:50px;
+  z-index: 20;
+
+}
+
+.para2 {
+
+  width: 450px;
+  color:#C4C4C4;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  display: block;
+  position: relative;
+  top:22px;
+  left:50px;
+  right:50px;
+  z-index: 20;
+
+}
+
+.para3 {
+
+  width: 450px;
+  color:#C4C4C4;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  display: block;
+  position: relative;
+  top:90px;
+  left:40px;
+  right:80px;
+  z-index: 20;
+
+}
+
+
+/*magnifyingglass begins*/
+.magnify {width: 500px; margin: 50px auto; position: relative; cursor: none}
+
+/*Lets create the magnifying glass*/
+.large {
+  width: 275px; height: 275px;
+  position: absolute;
+  border-radius: 100%;
+  
+  /*Multiple box shadows to achieve the glass effect*/
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 
+  0 0 7px 7px rgba(0, 0, 0, 0.25), 
+  inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  
+  /*hide the glass by default*/
+  display: none;
+}
+
+.small {display: block;
+
+}
+
+/*To solve overlap bug at the edges during magnification*/
+
+
+/*magnifyingglass ends*/
+
+/*buttons begin*/
+
+
+
+#HomeButton {
+  width: 100px;
+  height: 42px;
+  background-color: none;
+  border-radius: 0px;
+  color: #C4C4C4;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5em;
+  border: 6px solid #C4C4C4;
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+}
+
+
+#HomeButton:hover {
+
+  color: #EDEDED;
+  border: 6px solid #EDEDED;
+  
+}
+
+
+
+#AboutButton {
+  width: 100px;
+  height: 42px;
+  background-color: none;
+  border-radius: 0px;
+  color: #C4C4C4;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5em;
+  border: 6px solid #C4C4C4;
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  left: 117px;
+  z-index: 999;
+}
+
+#AboutButton:hover {
+
+  color: #EDEDED;
+  border: 6px solid #EDEDED;
+  
+}
+
+
+
+
+#CategorizeButton {
+  width: 160px;
+  height: 42px;
+  background-color: none;
+  border-radius: 0px;
+  color: #C4C4C4;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5em;
+  border: 6px solid #C4C4C4;
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  left: 224px;
+  z-index: 999;
+}
+
+#CategorizeButton:hover {
+
+  color: #EDEDED;
+  border: 6px solid #EDEDED;
+  
+}
+
+#SubmitButton {
+  float: left;
+  width: 120px;
+  height: 42px;
+  background-color: none;
+  border-radius: 0px;
+  color: #C4C4C4;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5em;
+  border: 6px solid #C4C4C4;
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+#SubmitButton:hover {
+
+  color: #EDEDED;
+  border: 6px solid #EDEDED;
+  
+}
+
+/*buttons end*/
+
+
